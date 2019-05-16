@@ -1,5 +1,5 @@
 {
-    "DAC_name": "DAC Factory",
+    "dacName": "DAC Factory",
     "contracts": {
         "token": {
             "name": "kasdactokens",
@@ -55,6 +55,12 @@
                 "name":"dacelections", 
                 "linkedAuths": [
                     {"contract": "kasdactokens", "action": "transfer", "permission": "xfer", "label": "Transfer KASDAC"}
+                ]
+            },
+            {
+                "name":"kasdactokens", 
+                "linkedAuths": [
+                    {"contract": "kasdactokens", "action": "newmemterms", "permission": "active", "label": "Update Constitution"}
                 ]
             },
             {
